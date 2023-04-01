@@ -50,12 +50,9 @@ p{
     padding: 10px 30px;/* text přetéká */
     margin-bottom:  60px;
 }
-
-.icon-frame{
-    font-size: 13px;
-    font-weight: 300;
-    text-align: center;
+.buttons{
 }
+
 
 .main-text{
     font-size: 16px;
@@ -81,4 +78,29 @@ p{
     left: 220px;
     background: #407BFF;
     margin: 0 45% 30px 45%;/* asi špatně nastavený střed */
+}
+
+.container1,
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex: 1 1 100%;
+}
+
+.icon{
+    margin: 20px 40px 20px 20px;
+}
+
+.icon-text{
+    margin: 30px 20px 30px 0;
 }
