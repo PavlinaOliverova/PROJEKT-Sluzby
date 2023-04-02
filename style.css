@@ -4,11 +4,11 @@ html { box-sizing: border-box; }
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0 20px 0 20px;
-    background-color: #FAFAFA;
+    background-color: rgba(250, 250, 250, 1);
 }
 
 
-/* Výchozí nastavení */
+/* Výchozí zobrazení*/
 
 h1{
     font-size: 28px;
@@ -98,6 +98,7 @@ section{
 .box{
     font-size: 13px;
     font-weight: 300;
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     border-radius: 10px;
     box-shadow: 0px 4px 6px #407BFF1F;
@@ -107,9 +108,47 @@ section{
 }
 
 .icon{
-    margin: 20px 40px 20px 20px;
+    width: 45px;
+    height: 40px;
+    margin: 20px 15px 20px 20px;
 }
 
 .icon-text{
-    margin: 30px 20px 30px 0;
+    margin: 30px 20px 20px 15px;
 }
+
+/* Tablet - 640px a více */
+
+@media screen and (min-width: 640px){
+    .icon{
+        width: 50px;
+        height: 40px;
+        margin: 40px auto 20px auto;
+    }
+
+    .icon-text{
+        margin: 0 15px 20px 15px;
+    }
+
+    .container1,
+    .container2{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .box{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 0 0 calc((100% - 40px) / 3);
+    }
+
+    .main-text{
+        margin: 20px 110px 40px 110px;
+    }
+    
+   .one,
+   .two{
+    margin-bottom: 80px};
+   }
+    
